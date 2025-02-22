@@ -3,7 +3,6 @@ import {
     Sheet,
     SheetClose,
     SheetContent,
-   
     SheetTitle,
     SheetTrigger,
   } from "@/components/ui/sheet"
@@ -19,7 +18,6 @@ const MobileNavigation = () => {
             <Image src='/icons/hamburger.svg' alt='menu icon' width={36} height={36} className='invert-colors cursor-pointer sm:hidden' />
         </SheetTrigger>
         <SheetContent className='background-light900_dark200'>
-            
             <SheetTitle>Navigation</SheetTitle>
             <Link href="/" className="flex items-center gap-1">
                 <Image src='/images/site-logo.svg' alt='logo' width={23} height={23} />
@@ -46,17 +44,14 @@ const MobileNavigation = () => {
                     <SheetClose asChild>
                         <Link href={ROUTE.SIGN_UP}>
                             <Button className='small-medium light-border-2 btn-tertiary min-h-[41px] w-full rounded-lg px-4 py-3  text-light-850 shadow-none'>
-                                
-                                    Sign up
-                                
+                                Sign up
                             </Button>
                         </Link>
                     </SheetClose>
                 </div>
             </div>
         </SheetContent>
-</Sheet>
-
+    </Sheet>
   )
 }
 
